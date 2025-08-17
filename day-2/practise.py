@@ -14,5 +14,4 @@ print(a * b)
 c = float(input("Enter the number: "))
 print(f"{c:.2f}")
 
-
 print(2 ** 3 ** 2)
