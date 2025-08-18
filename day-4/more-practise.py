@@ -93,3 +93,16 @@ elif x % 3 == 0 and x % 5 == 0:
     print("Divisible by 3 and 5")
 else:
     print("Not divisible by 2, 3 or 5")
+
+# Triangle 
+
+x = int(input("enter the first side of the triangle: "))
+y = int(input("enter the second side of the triangle: "))
+z = int(input("enter the third side of the triangle: "))
+
+if x==y and y==z:
+    print("Equilateral")
+elif x==y or y==z or z==x:
+    print("Isosceles")
+else:
+    print("Obtuse")
