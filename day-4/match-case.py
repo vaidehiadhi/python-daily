@@ -57,3 +57,17 @@ match num:
     case _:
         print(num)
 
+"""
+✅ Key Points to Remember
+
+match is more powerful than switch in other languages (supports pattern matching).
+
+_ acts like a default case.
+
+Can match values, types, sequences, and even unpack tuples/lists.
+
+Guards (if) allow more fine-grained control.
+
+Only available in Python 3.10+.
+"""
+
