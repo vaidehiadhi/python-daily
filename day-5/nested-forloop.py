@@ -6,3 +6,7 @@ for i in list1:
     print()
 
 # patterns in notebook!
+
+
+for i in range(10):
+    print(5 * i)
