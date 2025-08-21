@@ -33,7 +33,9 @@ print(total)
 
 # Print the factorial of a given number using a while loop.
 
-num = 5 | factorial = 1 |i = 1
+num = 5  
+factorial = 1  
+i = 1
 while i <= num:
     factorial *= i   
     i += 1  
@@ -57,4 +59,3 @@ while True:
     else:
         num = int(user_input)
         print("You entered:", num)
-
