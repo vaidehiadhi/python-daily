@@ -84,7 +84,7 @@ nums.reverse()      # reverses the list
 a = [1, 2, 3]
 b = a               # same list reference
 c = a.copy()        # shallow copy
-# d = list(a)         # another shallow copy
+d = list(a)         # another shallow copy
 
 # 10. 🔹 List Comprehensions
 
@@ -99,6 +99,56 @@ print(condition)
 
 pairs = [(x, y) for x in [1,2] for y in [3,4]]
 print(pairs)
+
+#Useful List functions
+
+# | Function          | Example              | Result    |
+# | ----------------- | -------------------- | --------- |
+# | `len()`           | `len([1,2,3])`       | `3`       |
+# | `min()` / `max()` | `min([4,7,2])`       | `2`       |
+# | `sum()`           | `sum([1,2,3])`       | `6`       |
+# | `sorted()`        | `sorted([3,1,2])`    | `[1,2,3]` |
+# | `any()`           | `any([0, False, 5])` | `True`    |
+# | `all()`           | `all([1, True, 5])`  | `True`    |
+
+# 12. 🔹 Nested Lists (2D Lists / Matrices)
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix[0][1])  # 2
+
+# 13. 🔹 Iterating Through Lists
+fruits = ["apple", "banana", "cherry"]
+
+# Simple loop
+for fruit in fruits:
+    print(fruit)
+
+# With index
+for i, fruit in enumerate(fruits):
+    print(i, fruit)
+
+# 14. 🔹 Copy vs Reference (⚠️ Important)
+a = [1, 2, 3]
+b = a
+b[0] = 99
+print(a)   # [99, 2, 3]  (because b is not a new list!)
+
+# Correct way:
+b = a.copy()
+b[0] = 99
+print(a)   # [1, 2, 3]
+
+# 15. 🔹 Common Errors with Lists
+# IndexError → accessing index that doesn’t exist
+nums = [1,2,3]
+print(nums[5])   # IndexError
+
+# ValueError → removing an item not in list
+nums.remove(10)  # ValueError
 
 
 
