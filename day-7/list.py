@@ -19,10 +19,10 @@ num_list = [1, 2, 3, 4, 5]
 mixed = ["hello", 1, 3, 6.82, False]
 
 #nested lists 
-list_in = [1,2,3[3,4,5]]
+list_in = [1,2,3,[3,4,5]]
 
 #using list()
-nums = list((1,2,3))
+# nums = list((1,2,3))
 
 # 3. 🔹 Accessing List Elements
 
@@ -84,10 +84,21 @@ nums.reverse()      # reverses the list
 a = [1, 2, 3]
 b = a               # same list reference
 c = a.copy()        # shallow copy
-d = list(a)         # another shallow copy
+# d = list(a)         # another shallow copy
 
 # 10. 🔹 List Comprehensions
 
+value = [i for i in range(5) ]
+print(value)
+
+square = [i*i for i in range(10)]
+print(square)
+
+condition = [i*i for i in range(10) if i%2 == 0]
+print(condition)
+
+pairs = [(x, y) for x in [1,2] for y in [3,4]]
+print(pairs)
 
 
 
