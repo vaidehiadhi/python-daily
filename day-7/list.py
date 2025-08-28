@@ -151,8 +151,21 @@ print(nums[5])   # IndexError
 nums.remove(10)  # ValueError
 
 
+# Popular list methods 
 
-
+# | Method                | Description                                             | Example                           | Result                       |
+# | --------------------- | ------------------------------------------------------- | --------------------------------- | ---------------------------- |
+# | `append(x)`           | Adds a single element `x` to the end                    | `lst = [1,2]; lst.append(3)`      | `[1, 2, 3]`                  |
+# | `insert(i, x)`        | Inserts `x` at index `i`                                | `lst = [1,2]; lst.insert(1, 99)`  | `[1, 99, 2]`                 |
+# | `extend(iterable)`    | Adds all elements from another iterable                 | `lst = [1,2]; lst.extend([3,4])`  | `[1, 2, 3, 4]`               |
+# | `remove(x)`           | Removes the **first occurrence** of `x`                 | `lst = [1,2,2]; lst.remove(2)`    | `[1, 2]`                     |
+# | `pop(i=-1)`           | Removes and returns element at index `i` (default last) | `lst = [1,2,3]; lst.pop()`        | Returns `3`, list → `[1, 2]` |
+# | `clear()`             | Removes all elements (empties list)                     | `lst = [1,2]; lst.clear()`        | `[]`                         |
+# | `index(x)`            | Returns index of **first occurrence** of `x`            | `lst = [10,20,30]; lst.index(20)` | `1`                          |
+# | `count(x)`            | Counts how many times `x` appears                       | `lst = [1,1,2]; lst.count(1)`     | `2`                          |
+# | `sort(reverse=False)` | Sorts list in place                                     | `lst = [3,1,2]; lst.sort()`       | `[1, 2, 3]`                  |
+# | `reverse()`           | Reverses list in place                                  | `lst = [1,2,3]; lst.reverse()`    | `[3, 2, 1]`                  |
+# | `copy()`              | Returns a shallow copy of the list                      | `lst = [1,2]; new = lst.copy()`   | `new = [1, 2]`               |
 
 
 
