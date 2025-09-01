@@ -121,3 +121,15 @@ To print { or }, use double braces {{ or }}.
 """
 print(f"Use {{}} to show braces in f-strings")
 # Output: Use {} to show braces in f-strings
+
+"""
+✅ Summary
+
+Start with f"" or f''.
+
+Use {} to embed variables/expressions.
+
+Support formatting (decimal places, alignment, padding).
+
+Python 3.8+ allows var= for debugging.
+"""
